@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <script>
+
+        function hide_click(id, button) {
+                console.log(id, button)
+                var div = document.getElementById(id)
+
+                div.hidden = !div.hidden
+                if (button != undefined) {
+                    if (div.hidden) {
+                        button.innerText = "Megjelenítés"
+                    }
+                    else {
+                        button.innerText = "Rejtés"
+                    }
+                }
+            }
+
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal 2</title>
+    <link rel="Stylesheet" href="style.css">
+</head>
+<body>
+<div id="tartalom">
+    <table id="tabla1">
+        <tr><div id="infok1">
+            <td><h1>Portal 2</h1></td>
+        </tr>
+        <tr>
+            <td>
+                <img src="portal2kep.jpg">
+            </td>
+        </div></tr>
+        <tr><div id="infok2">
+            <td><b>Megjelenes: 2011. április 18.</b></td>
+        </tr>
+        <tr>
+            <td><b></b>Mufaj: Puzzle, Platform</b></td>
+        </tr>
+        <tr>
+            <td><b>Fejleszto: Valve Corporation</b></td>
+        </tr>
+        <tr>
+            <td><b>Kiado: Valve Corporation</b></td>
+        </div></tr>
+    </table>
+<div id="gepigeny">
+    <h2>Portal 2 Gepigeny</h1><button onclick="hide_click('specs_div', this)">Rejtés</button>
+        <div id="specs_div">
+    <table id="mingep" style="float: left;">
+        <caption>Minimum Gepigeny</caption>
+        <tr>
+            <td>CPU:</td>
+            <td>Dual Core 2.0 vagy AMD64X2</td>
+        </tr>
+        <tr>
+            <td>GPU:</td>
+            <td>ATI Radeon X800/ NVIDIA GeForce 7600/Intel HD Graphics 2000</td>
+        </tr>
+        <tr>
+            <td>Ram:</td>
+            <td>1GB XP / 2GB Vista</td>
+        </tr>
+        <tr>
+            <td>Direct X:</td>
+            <td>Version 11</td>
+        </tr>
+        <tr>
+            <td>OS</td>
+            <td>
+                Windows 7 / Vista / XP</td>
+        </tr>
+        <tr>
+            <td>Storage:</td>
+            <td>7.6 Gb</td>
+        </tr>
+        <tr>
+        
+        </tr>
+    </table>
+   
+</div>
+    
+</div>
+</body>
+</html>
